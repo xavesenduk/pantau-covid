@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PantauCovid</string>
+    <string name="pantaucovid">PantauCovid</string>
+    <string name="data_terkini_kasus_covid_19_di_indonesia">Data terkini kasus Covid-19 di Indonesia</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="positif">Positif</string>
+    <string name="sulawesi_utara">Sulawesi Utara</string>
+    <string name="sembuh">Sembuh</string>
+    <string name="meninggal">Meninggal</string>
+    <string name="kasus_positif_dunia">Kasus Positif Dunia</string>
+    <string name="pembuat_aplikasi">"Made with love by Fransiscus Xaverius Senduk - 19021106039"</string>
+    <string name="loading">loading...</string>
+</resources>

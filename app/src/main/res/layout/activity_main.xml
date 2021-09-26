@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <view
+            android:id="@+id/view4"
+            class="androidx.cardview.widget.CardView"
+            android:layout_width="354dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTglData">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPosGlobal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/kasus_positif_dunia"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewPosGlobalData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/loading"
+                    android:textAlignment="center"
+                    android:textColor="#FFC107"
+                    android:textSize="34sp" />
+
+            </LinearLayout>
+        </view>
+
+        <TextView
+            android:id="@+id/namaAplikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/pantaucovid"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tujuanAplikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/data_terkini_kasus_covid_19_di_indonesia"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaAplikasi" />
+
+        <TextView
+            android:id="@+id/Indonesia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/indonesia"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.229"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <view
+            android:id="@+id/viewPosIndo"
+            class="androidx.cardview.widget.CardView"
+            android:layout_width="159dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Indonesia">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPosIndo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/positif"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewPosIndoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/loading"
+                    android:textColor="#FFC107"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </view>
+
+        <TextView
+            android:id="@+id/SulawesiUtara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/sulawesi_utara"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <view
+            android:id="@+id/viewPosSulut"
+            class="androidx.cardview.widget.CardView"
+            android:layout_width="158dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SulawesiUtara">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPosSulut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/positif"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewPosSulutData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/loading"
+                    android:textColor="#FFC107"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </view>
+
+        <view
+            android:id="@+id/viewSemIndo"
+            class="androidx.cardview.widget.CardView"
+            android:layout_width="159dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPosIndo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSemIndo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/sembuh"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewSemIndoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/loading"
+                    android:textColor="#4CAF50"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </view>
+
+        <view
+            android:id="@+id/viewSemSulut"
+            class="androidx.cardview.widget.CardView"
+            android:layout_width="159dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPosSulut">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSemSulut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/sembuh"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewSemSulutData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/loading"
+                    android:textColor="#4CAF50"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </view>
+
+        <view
+            android:id="@+id/viewMenIndo"
+            class="androidx.cardview.widget.CardView"
+            android:layout_width="159dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewSemIndo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMenIndo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/meninggal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewMenIndoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/loading"
+                    android:textColor="#F44336"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </view>
+
+        <view
+            android:id="@+id/viewMenSulut"
+            class="androidx.cardview.widget.CardView"
+            android:layout_width="159dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewSemSulut">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMenSulut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/meninggal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewMenSulutData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/loading"
+                    android:textColor="#F44336"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </view>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="408dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/textViewTglData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="sans-serif"
+            android:text="Senin, 1 Januari 2021"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tujuanAplikasi" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/pembuat_aplikasi"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMenIndo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
